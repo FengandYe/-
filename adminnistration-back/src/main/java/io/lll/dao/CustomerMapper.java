@@ -3,13 +3,11 @@ package io.lll.dao;
 import com.github.pagehelper.Page;
 import io.lll.dto.out.CustomerListOutDTO;
 import io.lll.po.Customer;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CustomerMapper {
 
-    Page<CustomerListOutDTO> search();
 
     int deleteByPrimaryKey(Integer customerId);
 
@@ -23,5 +21,7 @@ public interface CustomerMapper {
 
     int updateByPrimaryKey(Customer record);
 
-    Integer disable(@Param("customerId") Integer customerId);
+    Page<CustomerListOutDTO> search();
+
+    Integer disable(Integer customerId);
 }

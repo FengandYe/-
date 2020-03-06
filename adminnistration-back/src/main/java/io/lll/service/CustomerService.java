@@ -11,4 +11,5 @@ public interface CustomerService {
     CustomerShowOutDTO getById(Integer customerId);
 
     Integer disable(Integer customerId);
+
 }

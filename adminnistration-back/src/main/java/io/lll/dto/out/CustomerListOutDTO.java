@@ -1,5 +1,7 @@
 package io.lll.dto.out;
 
+import java.util.Date;
+
 public class CustomerListOutDTO {
     private Integer customerId;
     private String username;
@@ -7,7 +9,7 @@ public class CustomerListOutDTO {
     private String mobile;
     private String email;
     private Byte status;
-    private Long createTimestamp;
+    private Date createTimestamp;
 
     public Integer getCustomerId() {
         return customerId;
@@ -57,11 +59,11 @@ public class CustomerListOutDTO {
         this.status = status;
     }
 
-    public Long getCreateTimestamp() {
+    public Date getCreateTimestamp() {
         return createTimestamp;
     }
 
-    public void setCreateTimestamp(Long createTimestamp) {
+    public void setCreateTimestamp(Date createTimestamp) {
         this.createTimestamp = createTimestamp;
     }
 }

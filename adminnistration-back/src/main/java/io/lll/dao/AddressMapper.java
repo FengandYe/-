@@ -19,9 +19,11 @@ public interface AddressMapper {
 
     int insertSelective(Address record);
 
-    Address selectByPrimaryKey(Integer addressId);
 
     int updateByPrimaryKeySelective(Address record);
 
     int updateByPrimaryKey(Address record);
+
+    Address selectByPrimaryKey(Integer addressId);
+
 }

@@ -49,4 +49,5 @@ public class CustomerServiceImpl implements CustomerService {
         Integer disable = customerMapper.disable(customerId);
         return disable;
     }
+
 }

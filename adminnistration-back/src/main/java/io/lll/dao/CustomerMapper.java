@@ -1,7 +1,6 @@
 package io.lll.dao;
 
 import com.github.pagehelper.Page;
-import io.lll.dto.out.CustomerListOutDTO;
 import io.lll.po.Customer;
 import org.springframework.stereotype.Repository;
 
@@ -21,7 +20,6 @@ public interface CustomerMapper {
 
     int updateByPrimaryKey(Customer record);
 
-    Page<CustomerListOutDTO> search();
+    Page<Customer> search();
 
-    Integer disable(Integer customerId);
 }

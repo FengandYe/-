@@ -1,15 +1,14 @@
 package io.lll.service;
 
 import com.github.pagehelper.Page;
-import io.lll.dto.out.CustomerListOutDTO;
-import io.lll.dto.out.CustomerShowOutDTO;
+import io.lll.dto.in.CustomerSetStatusInDTO;
+import io.lll.po.Customer;
 
 public interface CustomerService {
 
-    Page<CustomerListOutDTO> search(Integer pageNum);
+    Page<Customer> search(Integer pageNum);
 
-    CustomerShowOutDTO getById(Integer customerId);
+    Customer getById(Integer customerId);
 
-    Integer disable(Integer customerId);
-
+    void setStatus(CustomerSetStatusInDTO customerSetStatusInDTO);
 }

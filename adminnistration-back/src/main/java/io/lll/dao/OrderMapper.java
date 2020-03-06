@@ -1,5 +1,7 @@
 package io.lll.dao;
 
+import com.github.pagehelper.Page;
+import io.lll.dto.out.OrderListOutDTO;
 import io.lll.po.Order;
 import org.springframework.stereotype.Repository;
 
@@ -16,4 +18,6 @@ public interface OrderMapper {
     int updateByPrimaryKeySelective(Order record);
 
     int updateByPrimaryKey(Order record);
+
+    Page<OrderListOutDTO> search();
 }

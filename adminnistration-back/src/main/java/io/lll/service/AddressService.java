@@ -1,12 +1,14 @@
 package io.lll.service;
 
 
-import io.lll.dto.out.AddressListOutDTO;
+import io.lll.po.Address;
 
 import java.util.List;
 
 public interface AddressService {
 
-    List<AddressListOutDTO> getListCustomerId(Integer customerId);
+    Address getById(Integer addressId);
+
+    List<Address> getByCustomerId(Integer customerId);
 
 }

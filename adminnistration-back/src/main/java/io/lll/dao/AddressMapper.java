@@ -26,4 +26,5 @@ public interface AddressMapper {
 
     Address selectByPrimaryKey(Integer addressId);
 
+    List<Address> selectByCustomerId(Integer customerId);
 }

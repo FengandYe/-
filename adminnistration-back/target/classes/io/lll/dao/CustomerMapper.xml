@@ -212,11 +212,6 @@
     <include refid="Base_Column_List" />
     from jcart_customer
   </select>
-  <update id="disable" parameterType="io.lll.po.Customer">
-    update jcart_customer
-    set
-      status = #{status,jdbcType=TINYINT},
-    where customer_id = #{customerId,jdbcType=INTEGER}
-  </update>
+
 
 </mapper>

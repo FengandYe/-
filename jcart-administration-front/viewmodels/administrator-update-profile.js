@@ -18,7 +18,11 @@ var app = new Vue({
             this.updateMyProfile();
         },
         getMyProfile() {
-            axios.get('/administrator/getProfile')
+            axios.get('/administrator/getProfile', {
+                    params:{
+                        administratorId: this.administratorId
+                    }
+                })
                 .then(function (response) {
                     console.log(response);
                     var me = response.data;

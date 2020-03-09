@@ -5,7 +5,6 @@ var app = new Vue({
         addresses: []
     },
     mounted() {
-        
         console.log('view mounted');
 
         var url = new URL(location.href);

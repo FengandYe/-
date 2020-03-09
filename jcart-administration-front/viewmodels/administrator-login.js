@@ -2,30 +2,33 @@ var app = new Vue({
     el: '#app',
     data: {
         username: '',
-        password: ''
+        password: '',
+    },
+    mounted() {
+      
     },
     methods: {
         handleLoginClick(){
-            console.log('login click');
-            this.loginAdministrator();
+            this.administratorLogin();
         },
-        loginAdministrator() {
-            axios.get('/administrator/login', {
-                params: {
-                    username: this.username,
-                    password: this.password
+        administratorLogin(){
+            axios.get("/administrator/login",
+            {
+                params:{
+                    username : this.username,
+                    password : this.password
                 }
             })
-                .then(function (response) {
-                    console.log(response);
-                    var dto = response.data;
-                    localStorage['jcartToken'] = dto.token;
-                    localStorage['expireTimestamp'] = dto.expireTimestamp;
-                    alert('登陆成功');
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
+            .then(res => {
+                alert('登录成功');
+                localStorage['jcartToken'] = res.data.token;
+                localStorage['expireTimestamp'] = res.data.expireTimestamp;
+                // location.href="product-search.html";         
+            })
+            .catch(function (error) {
+                console.log(error);
+                alert('登录失败');
+            });
         }
-    }
+    }   
 })

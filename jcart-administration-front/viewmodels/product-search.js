@@ -5,28 +5,32 @@ var app = new Vue({
         pageNum: 1
     },
     mounted() {
-        console.log('view mounted');
         this.searchProduct();
     },
     methods: {
+        searchProduct(){
+            axios.get('/product/search',{
+                pageNum : this.pageNum
+            })
+            .then(res => {
+                this.pageInfo = res.data;
+            })
+            .catch(res => {
+                console.log(res);
+            })
+
+        },
         handlePageChange(val){
             console.log('page change');
             this.pageNum = val;
             this.searchProduct();
         },
-        searchProduct() {
-            axios.get('/product/search', {
-                params: {
-                    pageNum: this.pageNum
-                }
-            })
-                .then(function (response) {
-                    console.log(response);
-                    app.pageInfo = response.data;
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
+        handleGoCreateClick(){
+            location.href='product-create.html';
+        },
+        handleGoUpdateClick(index,row){
+            console.log('to submit click', row);
+            location.href='product-update.html?productId='+row.productId;
         }
-    }
+    }   
 })

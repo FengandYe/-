@@ -34,25 +34,25 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/lll" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/lll/enumeration" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaFile\jcart-store-back\src\main\resources\io.lll.dao" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="io.lll" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaFile\jcart-store-back\src\main\java\io\lll\enumeration" />
       <recent name="E:\IdeaFile\jcart-store-back\src\main\java\io\lll" />
       <recent name="E:\IdeaFile\jcart-store-back\src\main\resources\io.lll.dao" />
       <recent name="E:\IdeaFile\jcart-store-back\src\main\java\io\lll\dao" />
       <recent name="E:\IdeaFile\jcart-store-back\src\main\java\io\lll\controller" />
-      <recent name="E:\IdeaFile\jcart-store-back\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IdeaFile\jcart-store-back\src\main\resources\io.lll.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -106,6 +106,8 @@
       <workItem from="1583641924593" duration="1276000" />
       <workItem from="1583650695926" duration="4530000" />
       <workItem from="1583686006695" duration="381000" />
+      <workItem from="1583686469938" duration="235000" />
+      <workItem from="1583746643140" duration="2301000" />
     </task>
     <servers />
   </component>

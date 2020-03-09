@@ -41,7 +41,7 @@ var app = new Vue({
             })
                 .then(function (response) {
                     console.log(response);
-                    alert('修改成功');
+                    alert('更新成功');
                 })
                 .catch(function (error) {
                     console.log(error);

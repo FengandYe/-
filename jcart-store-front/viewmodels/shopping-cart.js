@@ -14,6 +14,13 @@ var app = new Vue({
             return totalPrice;
         }
     },
+    // watch: {
+    //     totalPrice: function (newVal, oldVal) {
+    //         console.log('my total price change', newVal);
+    //         localStorage['myShoppingCartJson'] = JSON.stringify(this.myShoppingCart);
+    //         this.$message.success('修改购物车成功');
+    //     }
+    // },
     mounted() {
         console.log('view mounted');
         var myShoppingCartJson = localStorage['myShoppingCartJson'];

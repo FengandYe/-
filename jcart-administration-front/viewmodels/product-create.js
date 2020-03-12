@@ -54,6 +54,7 @@ var app = new Vue({
                 .then(function (response) {
                     console.log(response);
                     app.mainPicUrl = response.data;
+                    console.log(response.data)
                     alert('上传成功');
                 })
                 .catch(function (error) {
